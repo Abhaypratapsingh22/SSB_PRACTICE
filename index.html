@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSB Prep - SSB Practice & Mock Tests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="#" class="logo">
+          <span class="logo-ssb">SSB</span>
+          <span class="logo-prep">Prep</span>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Tests</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Performance</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Study Material</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="user-profile">
+          <div class="user-avatar" aria-label="User Avatar">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <span class="user-name">Aditya Singh</span>
+          <svg class="dropdown-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+            <path d="M4 6.5L8 10.5L12 6.5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="main">
+    <div class="dashboard-container">
+      <!-- Primary Left Column -->
+      <section class="content-column">
+        <h1 class="page-title">SSB Practice & Mock Tests</h1>
+
+        <!-- Boost Your Prep Progress Card -->
+        <div class="prep-progress-card">
+          <div class="progress-info-row">
+            <h2 class="progress-title">Boost Your Prep!</h2>
+            <span class="progress-percent-label">Overall Progress: 42%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 42%;"></div>
+          </div>
+        </div>
+
+        <!-- Active Test Series -->
+        <section class="series-section">
+          <h2 class="series-heading">Active Test Series</h2>
+
+          <div class="test-cards-grid">
+            <!-- Card 1: Practice Test 1 -->
+            <div class="test-card card-accent-green">
+              <div class="test-card-body">
+                <h3 class="test-title">Practice Test 1</h3>
+                <p class="test-subtitle">Logical Reasoning & OIR</p>
+              </div>
+              <div class="test-card-footer">
+                <span class="badge badge-completed">
+                  <svg class="badge-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <circle cx="8" cy="8" r="8" fill="#168f38"/>
+                    <path d="M4.6 8.2l2.3 2.3 4.5-4.6" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Completed</span>
+                </span>
+                <button class="btn btn-navy" type="button">Review</button>
+              </div>
+            </div>
+
+            <!-- Card 2: Practice Test 2 -->
+            <div class="test-card card-accent-green">
+              <div class="test-card-body">
+                <h3 class="test-title">Practice Test 2</h3>
+                <p class="test-subtitle">PP&DT - Picture Perception</p>
+              </div>
+              <div class="test-card-footer">
+                <button class="btn btn-green" type="button">Resume</button>
+                <span class="badge badge-gray">50% In Progress</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Full Length Test 1 -->
+            <div class="test-card card-accent-navy">
+              <div class="test-card-body">
+                <div class="test-title-line">
+                  <h3 class="test-title">Full Length Test 1</h3>
+                  <div class="test-duration">
+                    <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <circle cx="12" cy="12" r="9" stroke-width="2"/>
+                      <polyline points="12 7 12 12 15 15" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>3.5 Hours</span>
+                  </div>
+                </div>
+                <p class="test-subtitle">Complete SSB Simulation</p>
+              </div>
+              <div class="test-card-footer">
+                <button class="btn btn-navy" type="button">Start Test</button>
+                <span class="badge badge-gray">100 Questions</span>
+              </div>
+            </div>
+
+            <!-- Card 4: Full Length Test 2 -->
+            <div class="test-card card-accent-navy">
+              <div class="test-card-body">
+                <div class="test-title-line">
+                  <h3 class="test-title">Full Length Test 2</h3>
+                  <div class="test-lock">
+                    <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <rect x="5" y="11" width="14" height="10" rx="2" stroke-width="2"/>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke-width="2"/>
+                      <circle cx="12" cy="15.5" r="1.2" fill="currentColor"/>
+                      <path d="M12 16.7v1.8" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <p class="test-subtitle">Complete SSB Simulation</p>
+              </div>
+              <div class="test-card-footer">
+                <button class="btn btn-navy" type="button">Unlock Test</button>
+                <span class="prereq-label">Prerequisite: Complete FLT 1</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Right Column Sidebar -->
+      <aside class="sidebar-column">
+        <!-- Performance Analytics Card -->
+        <div class="sidebar-card analytics-card">
+          <h3 class="sidebar-heading">Performance Analytics</h3>
+          <div class="analytics-chart">
+            <svg viewBox="0 0 240 140" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+              <!-- Baseline line -->
+              <line x1="8" y1="135" x2="232" y2="135" stroke="#d5dbe2" stroke-width="1.2"/>
+
+              <!-- Bar Group 1 -->
+              <rect x="22" y="66" width="15" height="69" rx="2.5" fill="#0d3f94"/>
+              <rect x="39" y="94" width="15" height="41" rx="2.5" fill="#168f38"/>
+
+              <!-- Bar Group 2 -->
+              <rect x="74" y="8" width="15" height="127" rx="2.5" fill="#0d3f94"/>
+              <rect x="91" y="55" width="15" height="80" rx="2.5" fill="#168f38"/>
+
+              <!-- Bar Group 3 -->
+              <rect x="126" y="32" width="15" height="103" rx="2.5" fill="#0d3f94"/>
+              <rect x="143" y="80" width="15" height="55" rx="2.5" fill="#168f38"/>
+
+              <!-- Bar Group 4 -->
+              <rect x="178" y="56" width="15" height="79" rx="2.5" fill="#0d3f94"/>
+              <rect x="195" y="22" width="15" height="113" rx="2.5" fill="#168f38"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Recent Achievements Card -->
+        <div class="sidebar-card achievements-card">
+          <h3 class="sidebar-heading">Recent Achievements</h3>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
